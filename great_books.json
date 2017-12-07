@@ -1,0 +1,61 @@
+[{
+  name: "Anna Karenina",
+  author: "Leo Tolstoy",
+  country: "Russia",
+  language: "Russian",
+  release_date: 1877,
+  pages: 864
+},
+{
+  name: "War and Peace",
+  author: "Leo Tolstoy",
+  country: "Russia",
+  language: "Russian, with some French",
+  release_date: 1869,
+  pages: 1225
+},
+{
+  name: "Adventures of Huckleberry Finn",
+  author: "Mark Twain",
+  country: "United States",
+  language: "English",
+  release_date: 1884,
+  pages: 366
+},
+{
+  name: "To Kill a Mockingbird",
+  author: "Harper Lee",
+  country: "United States",
+  language: "English",
+  published: 1960,
+  pages: 281
+},
+{
+  name: "Nineteen Eighty-Four",
+  author: "George Orwell",
+  country: "United Kingdom",
+  language: "English",
+  published: 1949,
+  pages: 368
+},
+{
+  name: "The Great Gatsby",
+  author: "F. Scott Fitzgerald",
+  country: "USA",
+  language: "English",
+  published: 1925,
+  pages: 180
+},
+{
+  name: "Moby Dick",
+  author: "Herman Melville",
+  country: "United States",
+  language: "English",
+  published: 1851,
+  pages: 822
+}]
+
+
+
+
+

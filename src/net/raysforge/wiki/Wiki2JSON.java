@@ -56,16 +56,20 @@ public class Wiki2JSON implements ActionListener {
 
 		}
 
-		String keys[] = { "name", "author", "isbn", "country", "language", "release_date", "translator", "pages", "oclc" };
+		//String keys[] = { "name", "author", "isbn", "country", "language", "release_date", "translator", "pages", "oclc" };
+		String keys[] = { "name", "author", "isbn", "country", "language", "published", "pages"};
 
 		StringBuffer sb = new StringBuffer();
 		sb.append("{\n");
 		for (String key : keys) {
-			if(values.get(key).matches("\\d+"))
-				sb.append(key + ": " + values.get(key) + "\n");
+			if(values.get(key)==null)
+				sb.append("  " + key + ": null,\n");
+			else if(values.get(key).matches("\\d+"))
+				sb.append("  " + key + ": " + values.get(key) + ",\n");
 			else
-				sb.append(key + ": \"" + values.get(key) + "\"\n");
+				sb.append("  " + key + ": \"" + values.get(key) + "\",\n");
 		}
+		sb.deleteCharAt(sb.lastIndexOf(","));
 		sb.append("}\n");
 		eta.setText(sb.toString());
 	}
